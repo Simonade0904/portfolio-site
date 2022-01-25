@@ -1,0 +1,526 @@
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: "Noto Serif", "Times New Roman", serif;
+    font-size: 3rem;
+    padding: 12px 12px 12px 12px; 
+    font-weight: 700;
+}
+
+h2{
+    font-family: "Noto Serif", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 24px 0 24px 0;
+}
+
+h3{
+    font-family: "Noto Serif", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 16px 0 16px 0;
+}
+
+hr{
+    background: rgba(255,255,255,0);
+    margin: 24px 5% 8px 5%;
+}
+
+a{
+    font-family: "Cabin", "Arial", sans-serif;
+    color: #20627E;
+}
+
+p{
+    font-family: "Cabin", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    font-size: 1rem;
+    margin: 16px 0 16px 0;
+}
+
+ul{
+    margin: 16px 0 16px 0;
+    display: block;
+}
+
+li{
+    list-style-type: disc;
+    margin: 16px 0 16px 0;
+}
+
+header{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 95%, rgba(255,255,255,0) 100%);
+    position: sticky;
+    top: 0px;
+    padding: 12px 0 12px 0;
+    z-index: 2;
+}
+
+*:focus{
+    border: 2px solid #20627E;
+    border-radius: 5px;
+}
+
+.p1{
+    font-size: 1.2rem;
+}
+
+li > p{
+    margin: 0;
+}
+
+.content-box{
+    margin: 24px 10%;
+}
+
+.menu-icon{
+    position: absolute;
+    right: 10%;
+    top: 40px;
+    border: 2px solid transparent;
+}
+
+.icon-wrapper{
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-links > a{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 4px 0 4px 0;
+    margin: 4px 0 4px 0;
+}
+
+.nav-links-container{
+    display: none;
+}
+
+.current-page-link{
+    font-weight: 700;
+}
+
+.nav-divider{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+    height: 2px;
+    border: 0;
+}
+
+.skip-key{
+    position: absolute;
+    padding: 4px;
+    border: 1px solid #000000;
+    left: -200px;
+    top: -50px;
+    -webkit-transition: top 0.3s cubic-bezier(.48,.04,.53,.92), left 0.3s cubic-bezier(.48,.04,.53,.92);
+}
+
+.skip-key:focus{
+    left: 0px;
+    top: 0px;
+}
+
+.my-initials{
+    margin-left: 5%;
+    display: inline-block;
+    color: #20627E;
+}
+
+#name{
+    color: #20627E;
+}
+
+.footer-container{
+    background-color: #20627E;
+    margin-top: 48px;
+    margin-bottom: -50px;
+    padding: 12px 5% 12px 5%;
+}
+
+.footer-text{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.case-studies-gallery, .page-gallery{
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 70%;
+    justify-content: center;
+    row-gap: 12px;
+}
+
+.page-gallery > img{
+    border: 1px solid #000000;
+}
+
+.single-image{
+    width: 100%;
+    margin: 12px 0 12px 0;
+}
+
+.case-thumbnail{
+    width: 100%;
+    height: 240px;
+    object-fit: scale-down;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.case-study{
+    display: grid;
+    grid-template-rows: 6fr 1fr 1fr;
+    align-items: start;
+}
+
+.case-name, .case-type{
+    margin: 0;
+    padding: 0;
+}
+
+.case-name{
+    font-size: 1.5rem;
+}
+
+.case-type{
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.case-title, .page-title{
+    text-align: center;
+    margin: 24px 15% 24px 15%;
+    font-weight: 700;
+}
+
+.case-summary{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.case-summary > img{
+    border: 2px solid #20627E;
+}
+
+.case-property{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.case-textbox > p{
+    margin: 12px 0 12px 0;
+}
+
+.problem-statement{
+    margin-top: 32px;
+}
+
+.experience-header{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+/* Parallax Image CSS Styling */
+
+.parallax-box{
+    margin: 36px 0 36px 0;
+    padding: 12px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    background-image: url("../images/parallax.jpeg");
+    background-repeat: no-repeat;
+}
+
+/* Flip Card CSS Styling */
+
+.flip-card-outer{
+    position: relative;
+    background-color: transparent;
+    height: 300px;
+    width: 100%;
+    perspective: 1000px;
+    z-index: 0;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-outer:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-outer:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.flip-card-back{
+    background-color: #20627E;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-text{
+    text-align: center;
+}
+
+.flip-card-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.flip-card-text > .p1{
+    position: absolute;
+    padding: 0 5%;
+    top: 30%;
+}
+
+/* Contact Form CSS Styling*/
+
+.contact-form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-item{
+    padding: 8px;
+    margin: 8px;
+}
+
+.form-item > label{
+    font-family: "Cabin", "Arial", sans-serif;
+    font-size: 1rem;
+    color: #20627E;
+}
+
+.form-item > input{
+    height: 30px;
+}
+
+.form-item:nth-child(4){
+    width: 100%;
+}
+
+#msg{
+    margin-top: 8px;
+    width: 100%;
+    height: 300px;
+}
+
+.line-break{
+    width: 100%;
+}
+
+.contact-form > button{
+    width: auto;
+    height: auto;
+    margin-left: 16px;
+    padding: 4px 16px 4px 16px;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+    color: #20627E;
+    border: 2px solid #20627E;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .skip-key, .flip-card-outer .flip-card-inner{
+        animation: none;
+        transition: none;
+        -webkit-transition: none;
+    }
+
+    .parallax-box{
+        background-attachment: local;
+    }
+}
+
+/* Disable sticky header for horizontal phone */
+
+@media screen and (min-width: 768px) and (max-height: 500px) {
+    header{
+        position: static;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    hr{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content-box{
+        margin: 24px 15%;
+    }
+
+    .my-initials{
+        text-align: center;
+        margin: 0;
+        order: 1;
+    }
+
+    .navbar{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .nav-divider:first-of-type{
+        order: 3;
+    }
+    
+    .icon-wrapper{
+        display: none;
+    }
+
+    body .nav-links-container{
+        display: block;
+        order: 2;
+    }
+
+    .nav-links{
+        margin: 12px 15% 12px 15%;
+        flex-flow: row wrap;
+        column-gap: 24px;
+        justify-content: center;
+    }
+
+    .nav-links > a{
+        font-size: 1.2rem;
+    }
+
+    .nav-divider-mobile{
+        display: none;
+    }
+
+    .case-studies-gallery, .page-gallery{
+        grid-template-columns: 35% 35%;
+        column-gap: 24px;
+        margin-top: 36px;
+    }
+
+    .page-gallery > img{
+        width: 100%;
+        height: 240px;
+        object-fit: scale-down;
+    }
+
+    .about-textbox{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5%;
+    }
+
+    .flip-card-outer{
+        order: 1;
+        max-width: 47%;
+        object-fit: scale-down;
+        margin: 0;
+    } 
+    
+    .intro-1{
+        order: 2;
+        max-width: 47%;
+        overflow: auto;
+    }
+
+    .intro-1 > p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #film-gallery > img{
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    hr{
+        margin-top: 8px;
+    }
+    
+    .navbar{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        row-gap: 24px;
+    }
+
+    body .nav-links-container{
+        display: flex;
+        align-items: center;
+        width: 72%;
+        margin-right: 8%;
+    }
+
+    .nav-links{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .nav-divider:first-of-type{
+        width: 100%;
+    }
+
+    .my-initials{
+        margin-left: 10%;
+    }
+    
+    .case-studies-gallery, .page-gallery{
+        grid-template-columns: 23% 23% 23%;
+        column-gap: 24px;
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    main{
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .navbar{
+        max-width: 1800px;
+        margin: auto;
+    }
+
+}

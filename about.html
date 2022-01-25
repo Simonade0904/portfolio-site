@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" aria-label="favicon-letter-q">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <script src="js/menu.js" defer></script>
+    <title> Qingyi Wang - About Me </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHNY5TTPVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-PHNY5TTPVH');
+    </script>
+</head>
+
+<body>
+    <header>
+        <a class="skip-key" href="#content">Skip to content</a>
+        <nav class="navbar">
+            <h1 class="my-initials">QW</h1>
+            <div class="icon-wrapper">
+                <img class="menu-icon" src="images/hamburger_icon.svg" alt="navigation-menu" tabindex=0>
+            </div>
+            <hr class="nav-divider">
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <a id="case-studies-link" href="index.html">UX Case Studies</a>
+                    <a id="honeyco-link" href="honeyco.html">HoneyCo Beekeeping</a>
+                    <a id="jd-link" href="jd.html">JD.COM Rewards</a>
+                    <a id="other-projects-link" href="projects.html">Other Projects</a>
+                    <a id="about-me-link" class="current-page-link" href="about.html">[ About Me ]</a>
+                </div>
+                <hr class="nav-divider nav-divider-mobile">
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <h1 class="case-title">About Me</h1>
+        <hr>
+
+        <div class="content-box about-textbox">
+            <div class="intro-1">
+                <p>Hi! My name is Qingyi, a product designer based in Ann Arbor, Michigan.</p>
+
+                <p>The products that I have worked on range from consumer-facing apps serving hundreds of thousands of
+                    users to gateway websites by a nonprofit that is making a large impact locally. </p>
+
+                <p>If you are interested about my work or would simply like to reach out, please do so via
+                    qingyiwang1998 [at] gmail [dot] com.</p>
+            </div>
+
+            <!-- Flip card photo implementation-->
+
+            <div class="flip-card-outer" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="flip-card-image" src="images/my-photo.jpg" alt="my-photo">
+                    </div>
+
+                    <div class="flip-card-back">
+                        <div class="flip-card-text">
+                            <p class="p1">I love traveling and singing. I got to do both on a choir trip to Buffalo, NY
+                                :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="content-box">
+            <div class="intro-2">
+                <p>As of Nov. 20, 2021 I am :</p>
+
+                <ul class="text-list">
+                    <li>
+                        <p>Redesigning the web experience for local volunteering organization MI Alliance of TimeBanks
+                            through UMSI Design Clinic. I am acting as the project manager, organizing stakeholder
+                            meetings and tracking the progress of our team deliverables.</p>
+                    </li>
+
+                    <li>
+                        <p>Prototyping for ReDiscover, a mobile experience to rediscover your past friends, with a close
+                            software engineer friend of mine</p>
+                    </li>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content-box">
+            <h2 class="experience-header">Previous Experience</h2>
+
+            <h3>University of Michigan Design Clinic - Design Project Manager </h3>
+            <p>Managing a a team of 4 volunteers to research the users and information architecture for TimeBanks’
+                website, representing a cluster of 10+ community volunteer groups in Michigan</p>
+            <p>Planning the project timeline and managing client communications</p>
+
+            <h3>JD.COM - Product Manager Intern </h3>
+            <p>Prototyped a reward program for new users of the mobile e-reading application using user-centered
+                principles, projected to incentivize 20,000+ daily new users and increase 2-day retention rate by 10%
+            </p>
+            <p>Established an automated workflow to look up e-book prices using web scraping and Excel algorithms and
+                saved 100+ work hours for the team over 2 months’ time</p>
+
+            <h3>Mint Reading - Product Manager Intern </h3>
+            <p>Planned and conducted a usability experiment to determine the optimal display style and clickability of
+                in-text English phrases for a product catering to 500,000+ subscribers, 3 insights from which were noted
+                by executives</p>
+        </div>
+
+        <hr>
+
+        <div class="content-box">
+            <h2>Contact Form</h2>
+        <div class="form-box">
+            
+            <form action="https://formspree.io/f/mayvwgkl" method="POST" class="contact-form">
+                <div class="form-item">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+
+
+                <div class="form-item">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+
+                <div class="form-item">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="message" rows="40"></textarea>
+                        
+                </div>
+
+                <div class="line-break"></div>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text"> &copy; Made by Qingyi Wang in 2021 with &hearts; </p>
+        </div>
+    </footer>
+</body>
