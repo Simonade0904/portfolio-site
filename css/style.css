@@ -156,7 +156,7 @@ li > p{
 
 .case-studies-gallery, .page-gallery{
     display: grid;
-    grid-auto-rows: min-content;
+    grid-auto-rows: auto;
     grid-template-columns: 70%;
     justify-content: center;
     row-gap: 12px;
